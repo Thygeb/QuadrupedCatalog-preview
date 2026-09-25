@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jueying Mini — DEEP Robotics · embodied.guide</title>
+<meta name="description" content="Jueying Mini, DEEP Robotics. A reference work with a source and a date on every number">
+<meta name="robots" content="noindex">
+<link rel="alternate" hreflang="en" href="../../robots/deep-robotics-mini/">
+<link rel="alternate" hreflang="x-default" href="../../robots/deep-robotics-mini/">
+<link rel="stylesheet" href="../../system.css">
+<link rel="stylesheet" href="../../generator.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MJFN2KEZT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-5MJFN2KEZT')</script>
+</head>
+<body>
+<a class="spring" href="#hoved">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="i-vaegt" viewBox="0 0 24 24"><path d="M9.4 8a2.6 2.6 0 0 1 5.2 0"/><path d="M7 8h10l1.9 11.4a1.4 1.4 0 0 1-1.4 1.6H6.5a1.4 1.4 0 0 1-1.4-1.6Z"/></symbol>
+<symbol id="i-nyttelast" viewBox="0 0 24 24"><path d="M12 3v4.6"/><path d="M9.7 5.4 12 7.7l2.3-2.3"/><path d="M7.5 10.2h9v8.3h-9z"/><path d="M3.4 21h17.2"/></symbol>
+<symbol id="i-driftstid" viewBox="0 0 24 24"><path d="M3.6 8.2h12.9a1.6 1.6 0 0 1 1.6 1.6v4.4a1.6 1.6 0 0 1-1.6 1.6H3.6A1.6 1.6 0 0 1 2 14.2V9.8a1.6 1.6 0 0 1 1.6-1.6Z"/><path d="M20.8 10.9v2.2"/><path d="M4.9 10.9h4.3v2.2H4.9z"/></symbol>
+<symbol id="i-fart" viewBox="0 0 24 24"><path d="M3.6 17.4a8.8 8.8 0 1 1 16.8 0"/><path d="M12 17.4 16.4 10.6"/><circle cx="12" cy="17.4" r="1.35"/></symbol>
+<symbol id="i-ip" viewBox="0 0 24 24"><path d="M12 2.7 5.6 5.3v6c0 4.1 2.7 7.3 6.4 8.4 3.7-1.1 6.4-4.3 6.4-8.4v-6Z"/><path d="M12 8.9c-1.4 1.8-2.2 2.9-2.2 4a2.2 2.2 0 0 0 4.4 0c0-1.1-.8-2.2-2.2-4Z"/></symbol>
+<symbol id="i-ce" viewBox="0 0 24 24"><path d="M6 2.9h7.3L18 7.7v13.4H6z"/><path d="M13.3 2.9v4.8H18"/><path d="M9 13.1h6"/><path d="M9 16.5h4"/></symbol>
+<symbol id="i-hul" viewBox="0 0 24 24"><path d="M4.4 4.4h15.2v15.2H4.4z" stroke-dasharray="3.2 3.2"/></symbol>
+<symbol id="i-pil" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="M13.4 6.4 19 12l-5.6 5.6"/></symbol>
+<!-- Tre-tilstandsmaerkerne (3.6, spor/fundament, L54/L57 / MANIFEST §"Tre-
+     tilstandsreglen, tegnet"). Ingen unicode-glyffer, ingen emoji. Delte
+     .ikon-standarden (fill:none, stroke:currentColor) daekker konturerne;
+     de to fyldte former (i-ja, i-nul's prik) saetter fill/stroke direkte
+     paa elementet, saa de vinder over den nedarvede fill:none uden at
+     roere .ikon-klassen. Farven ("fuldt blaek" / "stoev-blaek") er IKKE
+     hardkodet her - den kommer fra brugsstedets color, som i alle de
+     andre symbolerne. Samme 4,4/15,2-kvadrat som i-hul, saa de fire
+     maerker og den eksisterende "ikke oplyst"-firkant deler stoerrelse. -->
+<symbol id="i-ja" viewBox="0 0 24 24"><path d="M4.4 4.4h15.2v15.2H4.4z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-nej" viewBox="0 0 24 24"><path d="M4.4 4.4h15.2v15.2H4.4z"/><path d="M5.8 5.8 18.2 18.2"/></symbol>
+<symbol id="i-nul" viewBox="0 0 24 24"><path d="M4.4 4.4h15.2v15.2H4.4z"/><circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-ioplyst" viewBox="0 0 24 24"><path d="M4.4 4.4h15.2v15.2H4.4z" stroke-dasharray="3.2 3.2"/></symbol>
+</svg>
+<header class="daek">
+<div class="daek__ramme rum">
+<div class="daek__mark">
+<a class="daek__navn" href="../../">embodied.guide</a>
+</div>
+<nav class="daek__nav" aria-label="Site sections">
+<ul>
+<li><a href="../../" aria-current="page">Catalogue</a></li>
+<li><a href="../../compare/">Compare</a></li>
+<li><a href="../../manufacturers/">Manufacturers</a></li>
+<li><a href="../../about/">About us</a></li>
+</ul>
+</nav>
+<p class="daek__enhed"><label class="enhedsskift" for="enhedsskift"><span class="enhedsskift__ord enhedsskift__ord--metrisk" aria-hidden="true">Metric units</span><span class="enhedsskift__spor" aria-hidden="true"><span class="enhedsskift__knop"></span></span><span class="enhedsskift__ord enhedsskift__ord--imperial">Imperial units</span></label></p>
+</div>
+</header>
+<main class="side" id="hoved">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="i-pris" viewBox="0 0 24 24"><path d="M20.6 13 13 5.4a2 2 0 0 0-1.4-.6H4a2 2 0 0 0-2 2v7.6a2 2 0 0 0 .6 1.4l7.6 7.6a2 2 0 0 0 2.8 0l7.6-7.6a2 2 0 0 0 0-2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+</svg>
+<div class="rum">
+<p class="retur"><a href="../../">Back to the catalogue</a></p>
+
+<article class="robotside typeskilt">
+<input type="checkbox" id="enhedsskift" class="kunskaerm enhedsskift__boks">
+<script src="../../enhed.js"></script>
+<header class="robot-top">
+<div class="robot-navn">
+<p class="kort-ophav"><a class="prod" href="../../manufacturers/deep-robotics/">DEEP Robotics</a><span class="land">China</span><span class="figur aar">2020</span></p>
+<h1 class="t-h1">Jueying Mini</h1>
+<ul class="maerker skiltlinje"><li class="maerke maerke--status maerke--drift">In production</li><li class="maerke maerke--vaegt">20–40 kg</li><li class="maerke maerke--tom anvendelse__maerke--ikke_oplyst"><svg class="maerke__mrk" aria-hidden="true"><use href="#i-ioplyst"/></svg>not stated</li></ul>
+
+</div>
+<div class="robot-noegletal">
+<section class="sektion" aria-labelledby="noegletal-h">
+<div class="stribe-hylster">
+<div class="stribe-hoved">
+<h2 class="etiket etiket--blaek" id="noegletal-h">Key figures as stated by the manufacturer</h2>
+<span class="stribe-taeller"><b>4 of 6 stated</b> <span class="mangler">· 2 gaps</span></span>
+<label class="enhedsskift" for="enhedsskift"><span class="enhedsskift__spor" aria-hidden="true"><span class="enhedsskift__knop"></span></span><span class="enhedsskift__ord enhedsvis enhedsvis--metrisk">Imperial units</span><span class="enhedsskift__ord enhedsvis enhedsvis--imperial">Metric units</span></label>
+</div>
+<ul class="stribe stribe--seks">
+<li><svg class="ikon" aria-hidden="true"><use href="#i-vaegt"/></svg><span class="krop">
+<span class="etiket">Weight</span>
+<span class="feltvaerdi"><span class="enhedsvis enhedsvis--metrisk"><span class="v v-tal"><b class="num">23</b><span class="enhed">kg</span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">50.7</b><span class="enhed">lb</span></span><span class="kunskaerm">Our conversion from 23 kg. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></span></span></li>
+<li><svg class="ikon" aria-hidden="true"><use href="#i-nyttelast"/></svg><span class="krop">
+<span class="etiket m-etiket">Payload, walking</span>
+<span class="feltvaerdi"><span class="enhedsvis enhedsvis--metrisk"><span class="v v-tal"><b class="num">10</b><span class="enhed">kg</span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">22</b><span class="enhed">lb</span></span><span class="kunskaerm">Our conversion from 10 kg. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></span></span></li>
+<li><svg class="ikon" aria-hidden="true"><use href="#i-driftstid"/></svg><span class="krop">
+<span class="etiket m-etiket">Runtime</span>
+<span class="feltvaerdi"><span class="v v-tal"><b class="num">40</b><span class="enhed">min</span><abbr class="forbehold--skjult" title="load condition not stated"><span class="kunskaerm">Warning: load condition not stated</span></abbr></span><a class="kildemaerke" href="#kilde-B" aria-label="Manufacturer product page. (B)" title="Manufacturer product page.">B</a></span></span></li>
+<li><svg class="ikon" aria-hidden="true"><use href="#i-fart"/></svg><span class="krop">
+<span class="etiket m-etiket">Max speed</span>
+<span class="feltvaerdi"><span class="enhedsvis enhedsvis--metrisk"><span class="original-enhed" title="The manufacturer wrote: 3.3 m/s. We show the figure in the site’s shared unit."><span class="v v-tal v-tal--lang"><b class="num">11.88</b><span class="enhed">km/h</span></span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">7.38</b><span class="enhed">mph</span></span><span class="kunskaerm">Our conversion from 11.88 km/h. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></span></span></li>
+<li class="hul"><svg class="ikon" aria-hidden="true"><use href="#i-ip"/></svg><span class="krop">
+<span class="etiket">IP rating</span>
+<span class="feltvaerdi"><span class="v v-ikke"><i class="mrk"></i>not stated</span></span></span></li>
+<li class="hul"><svg class="ikon" aria-hidden="true"><use href="#i-pris"/></svg><span class="krop">
+<span class="etiket">Indicative price</span>
+<span class="feltvaerdi"><span class="v v-ikke"><i class="mrk"></i>not stated</span></span></span></li>
+</ul>
+</div>
+<details class="stribe-under-fold">
+<summary>Deviations and variants in the key figures (3)</summary>
+<div class="stribe-under-krop">
+<div class="stribe-under"><p class="etiket m-etiket">Payload, walking</p><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>The producer&#39;s label is Max.load, without distinguishing walking/standing. The placement is an inference.</span></p></div>
+<div class="stribe-under"><p class="etiket m-etiket">Runtime</p><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>THE PRODUCER ITSELF FLAGS THE FIGURE AS DOUBTFUL. The Chinese table writes 40min followed by the characters for doubtful, pending verification. It appears ONLY in Chinese and is invisible to anyone reading English.</span></p></div>
+<div class="stribe-under"><p class="etiket m-etiket">Max speed</p><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>Speed and slope are in ONE row, separated by a full-width semicolon (U+FF1B): 3.3m/s; 30 degrees. A parser that reads the row as ONE field gets nonsense.</span></p></div>
+</div>
+</details>
+</section>
+</div>
+<figure class="robot-foto">
+<div class="billedled billedled--stor">
+<picture>
+<source srcset="../../billeder/fotos/fabrikant/deep-robotics-mini-240w.avif 240w, ../../billeder/fotos/fabrikant/deep-robotics-mini-560w.avif 560w, ../../billeder/fotos/fabrikant/deep-robotics-mini-840w.avif 840w, ../../billeder/fotos/fabrikant/deep-robotics-mini-930w.avif 930w, ../../billeder/fotos/fabrikant/deep-robotics-mini-1400w.avif 1400w" sizes="(max-width: 860px) 94vw, 48vw" type="image/avif">
+<source srcset="../../billeder/fotos/fabrikant/deep-robotics-mini-240w.webp 240w, ../../billeder/fotos/fabrikant/deep-robotics-mini-560w.webp 560w, ../../billeder/fotos/fabrikant/deep-robotics-mini-840w.webp 840w, ../../billeder/fotos/fabrikant/deep-robotics-mini-930w.webp 930w, ../../billeder/fotos/fabrikant/deep-robotics-mini-1400w.webp 1400w" sizes="(max-width: 860px) 94vw, 48vw" type="image/webp">
+<img src="../../billeder/fotos/fabrikant/deep-robotics-mini.png" alt="Jueying Mini" decoding="async">
+</picture>
+</div>
+<figcaption class="billedfod"><p><i class="prik"></i>Manufacturer&#39;s own photo.</p></figcaption>
+</figure>
+</header>
+<section class="sektion anvendelse" aria-labelledby="anvendelse-h">
+<div class="sektion-hoved"><h2 class="etiket etiket--blaek" id="anvendelse-h">Intended use, per the manufacturer</h2></div>
+
+
+<p class="t-mikro maal">Source: deeprobotics.cn · Retrieved <time datetime="2026-08-19">2026-08-19</time></p>
+<p class="t-lille maal">READ IN FULL, NOTHING FOUND. The Mini also isn’t in the producer’s Chinese product panel, where Lite3, X20, and X30 each get an application label. The page’s own text is about technology (&quot;deep learning&quot;, &quot;visual perception&quot;), not about who the robot is for.</p>
+<p class="t-lille maal">This category is not our assessment.</p>
+</section>
+<section class="sektion skema" id="skema" aria-labelledby="skema-h">
+<div class="skema__hoved">
+<h2 class="etiket etiket--blaek" id="skema-h">Every field in the schema</h2>
+<span class="skema-taeller figur">11 of 33 fields stated</span>
+<label class="enhedsskift" for="enhedsskift"><span class="enhedsskift__spor" aria-hidden="true"><span class="enhedsskift__knop"></span></span><span class="enhedsskift__ord enhedsvis enhedsvis--metrisk">Imperial units</span><span class="enhedsskift__ord enhedsvis enhedsvis--imperial">Metric units</span></label>
+</div>
+<p class="t-mikro maal enhedsnote">Imperial figures are our own conversion unless the manufacturer states an imperial figure itself. The source letter always belongs to the metric figure — a conversion has no source of its own.</p>
+<table class="skema-tabel" role="table" aria-labelledby="skema-h">
+<caption class="skema-tabel__kap" role="caption">The letter points to the source at the foot of the page. Fields without a figure are dashed: the manufacturer does not state them — that is not the same as zero, and not the same as no.</caption>
+<thead role="rowgroup"><tr role="row">
+<th scope="col" role="columnheader">Field</th>
+<th scope="col" role="columnheader">Value</th>
+<th scope="col" role="columnheader">Source and caveats</th>
+</tr></thead>
+<tbody class="skema-gruppe" role="rowgroup">
+<tr class="skema-gruppenavn" role="row"><th scope="rowgroup" colspan="3" role="rowheader">Physical</th></tr>
+<tr role="row"><th scope="row" role="rowheader">Weight</th><td class="skema-v" role="cell"><span class="enhedsvis enhedsvis--metrisk"><span class="v v-tal"><b class="num">23</b><span class="enhed">kg</span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">50.7</b><span class="enhed">lb</span></span><span class="kunskaerm">Our conversion from 23 kg. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></td></tr>
+<tr role="row"><th scope="row" role="rowheader">Length</th><td class="skema-v" role="cell"><span class="enhedsvis enhedsvis--metrisk"><span class="original-enhed" title="The manufacturer wrote: 700 mm. We show the figure in the site’s shared unit."><span class="v v-tal"><b class="num">70</b><span class="enhed">cm</span></span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">27.6</b><span class="enhed">in</span></span><span class="kunskaerm">Our conversion from 70 cm. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></td></tr>
+<tr role="row"><th scope="row" role="rowheader">Width</th><td class="skema-v" role="cell"><span class="enhedsvis enhedsvis--metrisk"><span class="original-enhed" title="The manufacturer wrote: 400 mm. We show the figure in the site’s shared unit."><span class="v v-tal"><b class="num">40</b><span class="enhed">cm</span></span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">15.7</b><span class="enhed">in</span></span><span class="kunskaerm">Our conversion from 40 cm. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></td></tr>
+<tr role="row"><th scope="row" role="rowheader">Height</th><td class="skema-v" role="cell"><span class="enhedsvis enhedsvis--metrisk"><span class="original-enhed" title="The manufacturer wrote: 500 mm. We show the figure in the site’s shared unit."><span class="v v-tal"><b class="num">50</b><span class="enhed">cm</span></span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">19.7</b><span class="enhed">in</span></span><span class="kunskaerm">Our conversion from 50 cm. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Degrees of freedom</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr role="row"><th scope="row" role="rowheader" class="m-etiket">Payload, walking</th><td class="skema-v" role="cell"><span class="enhedsvis enhedsvis--metrisk"><span class="v v-tal"><b class="num">10</b><span class="enhed">kg</span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">22</b><span class="enhed">lb</span></span><span class="kunskaerm">Our conversion from 10 kg. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>The producer&#39;s label is Max.load, without distinguishing walking/standing. The placement is an inference.</span></p></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Payload, standing</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr role="row"><th scope="row" role="rowheader" class="m-etiket">Max speed</th><td class="skema-v" role="cell"><span class="enhedsvis enhedsvis--metrisk"><span class="original-enhed" title="The manufacturer wrote: 3.3 m/s. We show the figure in the site’s shared unit."><span class="v v-tal v-tal--lang"><b class="num">11.88</b><span class="enhed">km/h</span></span></span></span><span class="enhedsvis enhedsvis--imperial"><span class="v v-tal"><b class="num">7.38</b><span class="enhed">mph</span></span><span class="kunskaerm">Our conversion from 11.88 km/h. The manufacturer does not state an imperial figure itself, so the conversion has no source of its own.</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>Speed and slope are in ONE row, separated by a full-width semicolon (U+FF1B): 3.3m/s; 30 degrees. A parser that reads the row as ONE field gets nonsense.</span></p></td></tr>
+<tr role="row"><th scope="row" role="rowheader" class="m-etiket">Max slope</th><td class="skema-v" role="cell"><span class="v v-tal"><b class="num">30</b><span class="enhed">°</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>It&#39;s in the same row as the speed – see speed.</span></p></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Single obstacle</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Stair step, continuous</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">IP rating</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Operating temperature, low</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Operating temperature, high</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+</tbody>
+<tbody class="skema-gruppe" role="rowgroup">
+<tr class="skema-gruppenavn" role="row"><th scope="rowgroup" colspan="3" role="rowheader">Power</th></tr>
+<tr role="row"><th scope="row" role="rowheader">Battery</th><td class="skema-v" role="cell"><span class="v v-tal"><b class="num">620</b><span class="enhed">Wh</span></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-B" aria-label="Manufacturer product page. (B)" title="Manufacturer product page.">B</a><p class="advarsel advarsel--uddybning"><b class="advarsel-navn">Note</b><span>ONLY the Chinese page is usable. The English page prints Battery capacity 10kg – kilograms in an energy field, probably Max.load 10kg copied into the wrong row. The correct figure can only be found by reading the original language, not the English translation.</span></p></td></tr>
+<tr role="row"><th scope="row" role="rowheader" class="m-etiket">Runtime</th><td class="skema-v" role="cell"><span class="v v-tal"><b class="num">40</b><span class="enhed">min</span><abbr class="forbehold--skjult" title="load condition not stated"><span class="kunskaerm">Warning: load condition not stated</span></abbr></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-B" aria-label="Manufacturer product page. (B)" title="Manufacturer product page.">B</a><p class="advarsel advarsel--gyldighed"><b class="advarsel-navn">Caveat</b><span>THE PRODUCER ITSELF FLAGS THE FIGURE AS DOUBTFUL. The Chinese table writes 40min followed by the characters for doubtful, pending verification. It appears ONLY in Chinese and is invisible to anyone reading English.</span></p></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Hot-swap battery</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Charge time</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Docking station</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+</tbody>
+<tbody class="skema-gruppe" role="rowgroup">
+<tr class="skema-gruppenavn" role="row"><th scope="rowgroup" colspan="3" role="rowheader">Sensing and autonomy</th></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">LiDAR</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Cameras</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr role="row"><th scope="row" role="rowheader">Onboard compute</th><td class="skema-v" role="cell"><span class="v v-tekst">Perception processor: Intel Core i7; CPU: NVIDIA Jetson Xavier NX</span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a><p class="advarsel advarsel--uddybning"><b class="advarsel-navn">Note</b><span>The producer spells it NIVIDIA. The misspelling is the producer’s own; we render the name correctly here and note the error. Note the split: the perception processor is an Intel i7, while the row labeled CPU is a Jetson.</span></p></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">ROS 2</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">SDK languages</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Autonomy level</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+</tbody>
+<tbody class="skema-gruppe" role="rowgroup">
+<tr class="skema-gruppenavn" role="row"><th scope="rowgroup" colspan="3" role="rowheader">Payload and expansion</th></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Mounting interface</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Power out</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr role="row"><th scope="row" role="rowheader">Data ports</th><td class="skema-v" role="cell"><span class="v v-liste"><code>WiFi</code> <code>USB</code> <code>Bluetooth</code></span></td><td class="skema-k" role="cell"><a class="kildemaerke" href="#kilde-A" aria-label="Manufacturer product page. (A)" title="Manufacturer product page.">A</a><p class="advarsel advarsel--uddybning"><b class="advarsel-navn">Note</b><span>WiFi and Bluetooth are connections, not physical ports. The field is counted as filled because the producer itself lists them as an interface list.</span></p></td></tr>
+</tbody>
+<tbody class="skema-gruppe" role="rowgroup">
+<tr class="skema-gruppenavn" role="row"><th scope="rowgroup" colspan="3" role="rowheader">Commercial</th></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">Indicative price</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+</tbody>
+<tbody class="skema-gruppe" role="rowgroup">
+<tr class="skema-gruppenavn" role="row"><th scope="rowgroup" colspan="3" role="rowheader">EU</th></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">CE stated</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"><p class="feltnote feltnote--eu">Records only what the manufacturer states regarding CE marking.</p></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">FCC stated</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">UL stated</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+<tr class="uoplyst" role="row"><th scope="row" role="rowheader">CCC stated</th><td class="skema-v" role="cell"><span class="v v-ikke"><i class="mrk"></i>not stated</span></td><td class="skema-k" role="cell"></td></tr>
+</tbody>
+</table>
+<p class="t-mikro maal">Stair step and payload each exist in two variants. Only compare fields with the same label.</p>
+</section>
+<section class="sektion noter-blok" aria-labelledby="noter-h">
+<div class="sektion-hoved"><h2 class="etiket etiket--blaek" id="noter-h">Notes</h2></div>
+<ul class="noter"><li>The manufacturer&#39;s English-language page has a unit error in the battery figure; the Chinese-language page states the correct value.</li></ul>
+</section>
+<section class="sektion produktside" aria-labelledby="produktside-h">
+<div class="sektion-hoved"><h2 class="etiket etiket--blaek" id="produktside-h">The manufacturer’s own page</h2></div>
+<p class="t-lille maal">The manufacturer’s original product page for this model.</p>
+<a class="knap knap--kant" href="https://deeprobotics.cn/en/index/product2.html" rel="nofollow noopener external">Open the manufacturer’s page for Jueying Mini<svg class="ikon" aria-hidden="true"><use href="#i-pil"/></svg></a>
+<p class="t-mikro produktside-url">https://deeprobotics.cn/en/index/product2.html</p>
+<p class="t-lille robot-videre"><a href="../../manufacturers/deep-robotics/">See every model from DEEP Robotics</a></p>
+</section>
+<section class="sektion kilder" id="kilder" aria-labelledby="kilder-h">
+<div class="sektion-hoved"><h2 class="etiket etiket--blaek" id="kilder-h">Sources</h2></div>
+<ul class="kildeliste">
+<li id="kilde-A">
+<span class="bogstav">A</span>
+<span><span class="hvad">Manufacturer product page.</span> <a class="url" href="https://deeprobotics.cn/en/index/product2.html" rel="nofollow noopener external">deeprobotics.cn/en/index/product2.html</a> <span class="dato">· Retrieved <time datetime="2026-08-19">2026-08-19</time></span></span>
+</li>
+<li id="kilde-B">
+<span class="bogstav">B</span>
+<span><a class="url" href="https://www.deeprobotics.cn/robot/index/product2.html" rel="nofollow noopener external">www.deeprobotics.cn/robot/index/product2.html</a> <span class="dato">· Retrieved <time datetime="2026-08-19">2026-08-19</time></span></span>
+</li>
+</ul>
+<p class="t-mikro maal">One line per source, not per figure: a source has one retrieval date. The letter beside a figure points to the line it came from.</p>
+</section>
+</article>
+</div>
+</main>
+
+<footer class="sidefod">
+<div class="rum sidefod__ramme">
+<p class="sidefod__haard">We do not resell any robot on this site, and we take no payment from the manufacturers.</p>
+<div class="sidefod__loefter">
+<p class="sidefod__broed">Every figure in the catalogue has a source and a retrieval date. If the manufacturer does not state it, the field becomes not stated — it never becomes an estimate.</p>
+<p class="sidefod__broed">The site sells nothing and asks you for nothing.</p>
+</div>
+<p class="sidefod__mark">
+<span class="sidefod__udgiver">Published by KeyResearch</span>
+<a class="sidefod__link" href="../../about/">About this publication</a>
+</p>
+</div>
+</footer>
+
+</body>
+</html>

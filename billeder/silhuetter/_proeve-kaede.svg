@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110" role="img"
+     aria-label="Proevefigur: firbenet robot i profil, tegnet til proeve af billedkaeden">
+  <!--
+    _proeve-kaede.svg — PROEVEFIGUR, ikke katalogindhold.
+
+    Den findes af én grund: at bevise, at kaeden fra et `billede:`-felt i en
+    robot-YAML til en <picture> i dist/ faktisk virker. Understregen forrest
+    siger, at filen ikke hoerer til robotsaettet.
+
+    Den er IKKE en silhuet af en rigtig robot og maa ikke bruges som én:
+      - Å3 (billedvejen) er ikke afgjort, og maalestokken i
+        assets/silhuetter/LÆSMIG.md er ikke valgt endnu.
+      - LÆSMIG.md regel 5: ingen silhuet uden kilde paa de maal, den er tegnet
+        efter. Maalene herunder er PAAFUNDNE til proevefiguren og hoerer til den
+        opdigtede post tests/billedkaede/proeve-billedkaede.yaml. De findes
+        ikke paa nogen maskine.
+
+    Nominelle maal for figuren: L 1000 mm x H 700 mm, tegnet 1 mm = 0,1 px,
+    altsaa 100 x 70 px inde i et 160 x 110 felt.
+
+    Tegnet 21. aug 2026 i haanden. Ingen AI-genereret billedfil (CLAUDE.md,
+    begraensning 4): filen er ren SVG-geometri skrevet som tekst.
+  -->
+  <g fill="none" stroke="#14161A" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- krop: 100 x 26 px = 1000 x 260 mm -->
+    <rect x="30" y="30" width="100" height="26"/>
+    <!-- hoved, i profil mod hoejre -->
+    <path d="M130 34 h14 v14 h-14"/>
+    <!-- fire ben, to segmenter hver. Samme streg, samme stilling paa alle fire. -->
+    <path d="M40 56 v18 l-6 16"/>
+    <path d="M56 56 v18 l6 16"/>
+    <path d="M104 56 v18 l-6 16"/>
+    <path d="M120 56 v18 l6 16"/>
+  </g>
+  <!-- gulvlinjen: figurens 0-punkt, saa hoejden kan laeses -->
+  <line x1="16" y1="92" x2="144" y2="92" stroke="#7C8695" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="16" y="106" font-family="ui-monospace, monospace" font-size="9"
+        letter-spacing="1.4" fill="#5A626E">PRØVE</text>
+</svg>
